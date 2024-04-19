@@ -10,7 +10,7 @@
   .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #ff7f50; /* Coral color */
+    color: #ff7f50;
   }
   
   .nav-links {
@@ -26,7 +26,7 @@
   }
   
   .nav-link:hover {
-    color: #ff7f50; /* Coral color */
+    color: #ff7f50; 
   }
   
   /* Apply the text color to the buttons */
@@ -41,6 +41,6 @@
   }
   
   .nav-link.button:hover {
-    color: #ff7f50; /* Coral color */
+    color: #ff7f50; 
   }
   

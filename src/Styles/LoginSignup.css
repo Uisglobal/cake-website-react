@@ -49,4 +49,9 @@
   .form-switch:hover {
     text-decoration: underline;
   }
+
+  .padding-container {
+    /* margin: 0 auto; */
+    padding-top: 20px;
+  }
   

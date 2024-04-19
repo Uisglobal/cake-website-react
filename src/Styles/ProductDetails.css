@@ -1,70 +1,72 @@
-  .product-details {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .product-details-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .details-and-button {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333333;
-  }
-  
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666666;
-  }
-  
-  label {
-    font-size: 16px;
-    color: #333333;
-  }
-  
-  input {
-    width: 60px;
-    font-size: 16px;
-    padding: 8px;
-    margin-left: 10px;
-  }
-  
-  button {
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    align-self: flex-end;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .success-message {
-    color: green;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
+.product-details {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-image-container {
+  display: flex;
+}
+
+
+.product-details-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-details-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 16px;
+  color: #333333;
+}
+
+input {
+  width: 60px;
+  font-size: 16px;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+}

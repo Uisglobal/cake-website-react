@@ -46,8 +46,6 @@ const Checkout = ({ cart }) => {
   
       if (response.ok) {
         const jsonResponse = await response.json();
-        console.log('Order placed successfully:', jsonResponse);
-        // Show success message or handle redirection
         // Reset the form
         setSubmittedData([...submittedData, newData]);
         setFormData({
@@ -63,13 +61,10 @@ const Checkout = ({ cart }) => {
           cvv: '',
         });
       } else {
-        // Handle error response
         console.error('Failed to place order:', response.status);
-        // Show error message to the user
       }
     } catch (error) {
       console.error('Error occurred while placing order:', error);
-      // Show error message to the user
     }
   };
   

@@ -17,7 +17,7 @@ const LoginSignup = () => {
     } else {
       setIsLoggedIn(false);
     }
-  }, []); // Empty dependency array ensures this effect runs only once after the component mounts
+  }, []); 
 
   const switchForm = () => {
     setLoginForm(!loginForm);
@@ -48,12 +48,12 @@ const LoginSignup = () => {
         // Login successful
         setIsLoggedIn(true);
         localStorage.setItem('setIsLoggedIn', true);
-        const { userId } = data; // Extract userId from the response data
+        const { userId } = data; 
         localStorage.setItem('userId', userId); // Set userId in local storage
         console.log('Login successful. User ID:', userId);
       } else {
         // Login failed
-        setError(data.message); // Assuming error message is returned from the server
+        setError(data.message);
       }
     } catch (error) {
       console.error('Error:', error);
@@ -85,13 +85,12 @@ const LoginSignup = () => {
 
       if (response.ok) {
         // Signup successful
-        // You may handle the success scenario according to your application flow
         console.log('Signup successful:', data);
         setSuccessMessage('Signup successful. Please login.');
 
       } else {
         // Signup failed
-        setError(data.message); // Assuming error message is returned from the server
+        setError(data.message);
       }
     } catch (error) {
       console.error('Error:', error);
@@ -103,10 +102,10 @@ const LoginSignup = () => {
     localStorage.setItem('setIsLoggedIn', false);
     localStorage.removeItem('userId');
     localStorage.removeItem('selectedProduct');
-    // Additional logic for logout if needed
   };
 
   return (
+    <div className="padding-container">
     <div className="login-signup-container">
       {!isLoggedIn ? (
         <>
@@ -127,8 +126,12 @@ const LoginSignup = () => {
           </p>
         </>
       ) : (
+        <div>
+          <h3> You are Logged In.</h3>
         <button onClick={handleLogout}>Logout</button>
+        </div>
       )}
+    </div>
     </div>
   );
 };

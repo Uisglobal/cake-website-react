@@ -13,16 +13,16 @@ import axios from 'axios';
 
 
 // Products List
-const products = [
-  { id: 1, name: 'Fruit Cake', image: require('./assets/images/cake1.jpg'), description: 'Cake with fruit', price: 10.99 },
-  { id: 2, name: 'Cups Cake', image: require('./assets/images/cake2.jpg'), description: 'Vegan cup cakes 3 pic', price: 8.99 },
-  { id: 3, name: 'Cheese Cake', image: require('./assets/images/cake1.jpg'), description: 'Vegan fruit cake', price: 12.99 },
-  { id: 4, name: 'Cup Cake', image: require('./assets/images/cake2.jpg'), description: 'Cup cake 3 pic', price: 6.99 },
-  { id: 5, name: 'Party Cake', image: require('./assets/images/cake6.jpg'), description: 'Party cake', price: 16.99 },
-  { id: 6, name: 'Suger bun Cake', image: require('./assets/images/cake7.jpg'), description: 'Suger bun cake 3 pic', price: 6.99 },
-  { id: 7, name: '100g Cake', image: require('./assets/images/cake8.jpg'), description: '1 100g pic', price: 6.99 },
-  { id: 8, name: 'Club Cake', image: require('./assets/images/cake10.jpg'), description: 'Club cake', price: 16.99 },
-];
+// const products = [
+//   { id: 1, name: 'Fruit Cake', image: require('./assets/images/cake1.jpg'), description: 'Cake with fruit', price: 10.99 },
+//   { id: 2, name: 'Cups Cake', image: require('./assets/images/cake2.jpg'), description: 'Vegan cup cakes 3 pic', price: 8.99 },
+//   { id: 3, name: 'Cheese Cake', image: require('./assets/images/cake1.jpg'), description: 'Vegan fruit cake', price: 12.99 },
+//   { id: 4, name: 'Cup Cake', image: require('./assets/images/cake2.jpg'), description: 'Cup cake 3 pic', price: 6.99 },
+//   { id: 5, name: 'Party Cake', image: require('./assets/images/cake6.jpg'), description: 'Party cake', price: 16.99 },
+//   { id: 6, name: 'Suger bun Cake', image: require('./assets/images/cake7.jpg'), description: 'Suger bun cake 3 pic', price: 6.99 },
+//   { id: 7, name: '100g Cake', image: require('./assets/images/cake8.jpg'), description: '1 100g pic', price: 6.99 },
+//   { id: 8, name: 'Club Cake', image: require('./assets/images/cake10.jpg'), description: 'Club cake', price: 16.99 },
+// ];
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -41,7 +41,7 @@ const App = () => {
           description: product.description,
           price: product.price 
         }));
-        console.log('Transformed Products:', transformedProducts); // Add this line
+        console.log('Transformed Products:', transformedProducts); 
         transformedProducts.forEach(product => {
           console.log('Id:', product.id);
           console.log('Name:', product.name);

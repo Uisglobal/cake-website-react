@@ -91,12 +91,7 @@ const CartScreen = ({ onRemoveFromCart, onUpdateQuantity }) => {
                     <p>Price: ${item.price.toFixed(2)}</p>
                     <label>
                       Quantity:
-                      <input
-                        type="number"
-                        min="1"
-                        value={item.quantity}
-                        onChange={(e) => onUpdateQuantity(item, parseInt(e.target.value))}
-                      />
+                      <h3>{item.quantity}</h3>
                     </label>
                     <p>Total Price: ${calculateTotalPrice(item).toFixed(2)}</p> 
                     <button onClick={() => handleRemoveFromCart(item)}>Remove</button>
